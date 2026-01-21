@@ -1,0 +1,110 @@
+/* Page background + font */
+body {
+  background-color: #f2f2f2;
+  font-family: "segoe UI", Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header design */
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 40px 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+/* Sections design */
+section h2 {
+  border-bottom:2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Headings */
+h2 {
+  color: #333;
+}
+
+/* List */
+ul {
+  padding-left: 20px;
+}
+
+/* conainer system */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Contact form styling */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border:1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #3498db;
+  color:white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* responsive design for mobile */
+@media (max-width: 768px) {
+
+  header h1 { font-size: 14px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  section {
+    margin: 15px 0;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #555;
+  font-size: 14px;
+}
