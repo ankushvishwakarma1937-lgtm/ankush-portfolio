@@ -14,19 +14,30 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     document.getElementById("nameError").innerText = "Name is required";
     return;
   }
-
   if (email === "") {
     document.getElementById("emailError").innerText = "Email is required";
     return;
   }
-
   if (message === "") {
     document.getElementById("messageError").innerText = "Message is required";
     return;
   }
 
-  document.getElementById("successMsg").innerText =
-    "Message submitted successfully (backend coming soon)";
-
-  document.getElementById("contactForm").reset();
+  emailjs.send(
+    "service_s06bsvd",
+    "template_dln9i5a",
+    {
+      name: name,
+      email: email,
+      message: message
+    }
+  ).then(function() {
+    document.getElementById("successMsg").innerText =
+      "Message sent successfully!";
+    document.getElementById("contactForm").reset();
+  }, function(error) {
+    document.getElementById("successMsg").innerText =
+      "Something went wrong. Try again.";
+    console.log(error);
+  });
 });
