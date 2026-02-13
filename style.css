@@ -186,3 +186,21 @@ button:hover {
   color: #555;
   font-weight: bold;
 }
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Card hover animation */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
